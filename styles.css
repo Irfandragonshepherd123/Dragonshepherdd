@@ -1,0 +1,291 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: #ff6f61;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 4.4em;
+}
+
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.whatsapp-button {
+    background: #25D366;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 3em;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background: #1da851;
+
+
+}
+
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid #ff6f61;
+}
+
+main {
+    padding: 2em 5%;
+}
+
+.section {
+    margin-bottom: 3em;
+    padding: 1em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff6f61;
+    border-bottom: 3px solid #ffcc00;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.breeds-gallery, .food-list, .medicine-list, .accessories-list, .kennels-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.breed-item, .food-item, .medicine-item, .accessory-item, .kennel-item {
+    flex: 1 1 calc(33.333% - 1.5em);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.breed-item:hover, .food-item:hover, .medicine-item:hover, .accessory-item:hover, .kennel-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.breed-item img, .food-item img, .medicine-item img, .accessory-item img, .kennel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.review-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    flex: 1 0 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.review-item:hover {
+    transform: scale(1.05);
+}
+
+.review-item img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.75em 1.5em;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e55b4c;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 400px) {
+    .breeds-gallery, .food-list, .medicine-list, .accessories-list, .kennels-list {
+        flex-direction: column;
+    }
+
+    .breed-item, .food-item, .medicine-item, .accessory-item, .kennel-item {
+        flex: 1 1 auto;
+        margin-bottom: 1em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .whatsapp-button {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+
+    .review-item img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
+
+
+.youtube-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF0000; /* YouTube Red */
+    border-radius: 50%;
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+    color: #FFFFFF; /* Icon color */
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.youtube-button:hover {
+    background-color: #CC0000; /* Darker red for hover effect */
+}
+
+.youtube-button svg {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+}
+
+
+
+
+.facebook-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1877F2; /* Facebook Blue */
+    border-radius: 50%;
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+    color: #FFFFFF; /* Icon color */
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.facebook-button:hover {
+    background-color: #165EAB; /* Darker blue for hover effect */
+}
+
+.facebook-button svg {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+}
